@@ -3,7 +3,6 @@
 / {
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "default_kscan"
         diode-direction = "row2col";
 
         row-gpios
