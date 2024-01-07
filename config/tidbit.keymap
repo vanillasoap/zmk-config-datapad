@@ -22,6 +22,8 @@
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp RS(KP_PLUS)
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &lt 1 KP_ENTER
 &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &none
+            >;
+
         };
 
         func_layer {
@@ -32,6 +34,8 @@
 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &tog 0
 &kp C_MUTE    &none         &none         &none
 &kp &none     &none         &none         &none
+            >;
+
         };
     };
 };
