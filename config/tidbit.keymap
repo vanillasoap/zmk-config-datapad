@@ -24,8 +24,6 @@
 &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &none
             >;
 
-        };
-
         func_layer {
             bindings = <
 &none         &sys_reset    &bootloader   &none
@@ -36,6 +34,5 @@
 &kp &none     &none         &none         &none
             >;
 
-        };
     };
 };
