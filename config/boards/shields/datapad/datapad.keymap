@@ -10,7 +10,7 @@
         default_layer {
             bindings = <
                 &kp ESC         &kp TAB         &kp BACKSPACE   &kp LEFT_SHIFT
-                &tog 1          &kp KP_NUMLOCK  &kp KP_ASTERISK &kp KP_EQUAL
+                &mo 1           &kp KP_NUMLOCK  &kp KP_ASTERISK &kp KP_EQUAL
                 &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_MINUS
                 &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_PLUS
                 &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 
@@ -19,10 +19,10 @@
 
         };
 
-         func_layer {
+         bt_layer {
              bindings = <
                 &none           &none           &sys_reset      &bootloader
-                &tog 0          &none           &none           &none
+                &none           &none           &none           &none
                 &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT      &bt BT_CLR
                 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none
                 &kp C_MUTE      &none           &none           
