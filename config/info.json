@@ -34,7 +34,7 @@
         { "label":       "00",        "row": 5, "col":  0, "x":    0, "y": 5 },
         { "label":       "0",         "row": 5, "col":  1, "x":    1, "y": 5 },
         { "label":       ".",         "row": 5, "col":  2, "x":    2, "y": 5 },
-        { "label":       "Enter",     "row": 5, "col":  3, "x":    3, "y": 3, "h": 2.0}
+        { "label":       "Enter",     "row": 5, "col":  3, "x":    3, "y": 4, "h": 2.0}
       ]
     }
   },
