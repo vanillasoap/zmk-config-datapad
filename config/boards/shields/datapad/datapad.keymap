@@ -8,6 +8,15 @@
 #define NONE 0
 
 / {
+    macros {
+        Double0: Double0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_0>;
+            label = "DOUBLE0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,12 +33,12 @@
 
         nav {
             bindings = <
-&trans    &trans        &trans     &tog 0
-&trans    &trans        &trans     &trans
-&trans    &kp UP_ARROW  &trans     &trans
-&kp LEFT  &trans        &kp RIGHT  &trans
-&trans    &kp DOWN      &trans
-&trans    &trans        &trans     &trans
+&trans      &trans        &trans         &tog 0
+&trans      &kp K_CUT     &kp K_COPY     &kp K_PASTE
+&kp HOME    &kp UP_ARROW  &kp PAGE_UP    &trans
+&kp LEFT    &trans        &kp RIGHT      &trans
+&kp END     &kp DOWN      &kp PAGE_DOWN
+&kp INSERT  &trans        &kp DEL        &trans
             >;
         };
 
