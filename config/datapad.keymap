@@ -8,6 +8,15 @@
 #define NONE 0
 
 / {
+    macros {
+        Double0: Double0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_0>;
+            label = "DOUBLE0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
