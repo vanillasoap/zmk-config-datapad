@@ -1,0 +1,40 @@
+  "id": "datapad",
+  "name": "datapad",
+  "keyboard_name": "datapad",
+  "keymap": "6x4",
+  "maintainer": "vanillasoap",
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        { "label":       "Esc",       "row": 0, "col":  0, "x":     0, "y": 0 },
+        { "label":       "Tab",       "row": 0, "col":  1, "x":     1, "y": 0 },
+        { "label":       "BS",        "row": 0, "col":  2, "x":     2, "y": 0 },
+        { "label":       "Shift",     "row": 0, "col":  3, "x":     3, "y": 0 },
+
+        { "label":       "Numlock",   "row": 1, "col":  0, "x":     0, "y": 1 },
+        { "label":       "/",         "row": 1, "col":  1, "x":     1, "y": 1 },
+        { "label":       "*",         "row": 1, "col":  2, "x":     2, "y": 1 },
+        { "label":       "=",         "row": 1, "col":  3, "x":     3, "y": 1 },
+
+        { "label":       "7",         "row": 2, "col":  0, "x":     0, "y": 2 },
+        { "label":       "8",         "row": 2, "col":  1, "x":     1, "y": 2 },
+        { "label":       "9",         "row": 2, "col":  2, "x":     2, "y": 2 },
+        { "label":       "-",         "row": 2, "col":  3, "x":     3, "y": 2 },
+
+        { "label":       "4",         "row": 3, "col":  0, "x":    0, "y": 3 },
+        { "label":       "5",         "row": 3, "col":  1, "x":    1, "y": 3 },
+        { "label":       "6",         "row": 3, "col":  2, "x":    2, "y": 3 },
+        { "label":       "+",         "row": 3, "col":  3, "x":    3, "y": 3 },
+
+        { "label":       "1",         "row": 4, "col":  0, "x":    0, "y": 4 },
+        { "label":       "2",         "row": 4, "col":  1, "x":    1, "y": 4 },
+        { "label":       "3",         "row": 4, "col":  2, "x":    2, "y": 4 },
+
+        { "label":       "00",        "row": 5, "col":  0, "x":    0, "y": 5 },
+        { "label":       "0",         "row": 5, "col":  1, "x":    1, "y": 5 },
+        { "label":       ".",         "row": 5, "col":  2, "x":    2, "y": 5 },
+        { "label":       "Enter",     "row": 5, "col":  3, "x":    3, "y": 5 "h": 2.0 },
+
+
+    ]
+}
