@@ -11,20 +11,21 @@
         label = "default_kscan";
         diode-direction = "col2row";
 
+
        col-gpios
-            = <&pro_micro 6 (GPIO_ACTIVE_HIGH)> // col 0
-            , <&pro_micro 7 (GPIO_ACTIVE_HIGH)> // col 1
-            , <&pro_micro 8 (GPIO_ACTIVE_HIGH)> // col 2
-            , <&pro_micro 9 (GPIO_ACTIVE_HIGH)> // col 3
+            = <&pro_micro 1 (GPIO_ACTIVE_HIGH)> // col 0
+            , <&pro_micro 0 (GPIO_ACTIVE_HIGH)> // col 1
+            , <&pro_micro 2 (GPIO_ACTIVE_HIGH)> // col 2
+            , <&pro_micro 3 (GPIO_ACTIVE_HIGH)> // col 3
             ;
 
         row-gpios
-            = <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 0
-            , <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 1
-            , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 2
-            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 3
-            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 4
-            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 5
+            = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 0
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 1
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 2
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 3
+            , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 4
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // row 5
             ;
     };
 
