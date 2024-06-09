@@ -12,7 +12,8 @@
         Double0: Double0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_0 &kp NUMBER_0>;
+            bindings = <&kp NUMBER_0 &kp NUMBER_0>, <&macro_press>;
+
             label = "DOUBLE0";
         };
     };
@@ -20,36 +21,36 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             bindings = <
-&kp ESC         &kp TAB       &tog 1        &tog 2
-&kp KP_NUMLOCK  &kp SLASH     &kp ASTERISK  &kp EQUAL
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp PLUS
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3
-&kp BACKSPACE   &kp NUMBER_0  &kp DOT       &lt 2 ENTER
+&kp ESC           &tog 0        &tog 1        &tog 2
+&kp K_CALCULATOR  &kp SLASH     &kp ASTERISK  &kp EQUAL
+&kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&kp NUMBER_4      &kp N5        &kp NUMBER_6  &kp PLUS
+&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3
+&kp NUMBER_0      &Double0      &kp DOT       &kp ENTER
             >;
         };
 
         nav {
             bindings = <
-&trans      &trans        &trans         &tog 0
+&trans      &tog 0        &tog 1         &tog 2
 &trans      &kp K_CUT     &kp K_COPY     &kp K_PASTE
 &kp HOME    &kp UP_ARROW  &kp PAGE_UP    &trans
 &kp LEFT    &trans        &kp RIGHT      &trans
 &kp END     &kp DOWN      &kp PAGE_DOWN
-&kp INSERT  &trans        &kp DEL        &trans
+&kp INSERT  &trans        &kp BACKSPACE  &trans
             >;
         };
 
         bt {
             bindings = <
-&none         &sys_reset    &tog 1        &tog 0
-&none         &out OUT_TOG  &out OUT_BLE  &out OUT_USB
-&bt BT_SEL 0  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR
-&bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-&kp C_MUTE    &none         &none
-&none         &none         &none         &none
+&none           &tog 0        &tog 1        &tog 2
+&none           &out OUT_TOG  &out OUT_BLE  &out OUT_USB
+&none           &none         &none         &none
+&none           &none         &none         &none
+&bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bootloader   &none
             >;
         };
     };
