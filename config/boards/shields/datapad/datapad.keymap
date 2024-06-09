@@ -23,18 +23,18 @@
 
         default {
             bindings = <
-&kp ESC           &tog 0        &tog 1        &tog 2
-&kp K_CALCULATOR  &kp SLASH     &kp ASTERISK  &kp EQUAL
-&kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
-&kp NUMBER_4      &kp N5        &kp NUMBER_6  &kp PLUS
-&kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3
-&kp NUMBER_0      &Double0      &kp DOT       &kp ENTER
+&kp ESC              &to 0         &to 1         &to 2
+&kp C_AL_CALCULATOR  &kp SLASH     &kp ASTERISK  &kp EQUAL
+&kp NUMBER_7         &kp NUMBER_8  &kp NUMBER_9  &kp MINUS
+&kp NUMBER_4         &kp N5        &kp NUMBER_6  &kp PLUS
+&kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3
+&kp NUMBER_0         &Double0      &kp DOT       &kp ENTER
             >;
         };
 
         nav {
             bindings = <
-&trans      &tog 0        &tog 1         &tog 2
+&trans      &trans        &trans         &trans
 &trans      &kp K_CUT     &kp K_COPY     &kp K_PASTE
 &kp HOME    &kp UP_ARROW  &kp PAGE_UP    &trans
 &kp LEFT    &trans        &kp RIGHT      &trans
@@ -45,7 +45,7 @@
 
         bt {
             bindings = <
-&none           &tog 0        &tog 1        &tog 2
+&none           &trans        &trans        &trans
 &none           &out OUT_TOG  &out OUT_BLE  &out OUT_USB
 &none           &none         &none         &none
 &none           &none         &none         &none
